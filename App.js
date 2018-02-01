@@ -15,7 +15,7 @@ import {
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
-  android: '这是一个测试数据 来自android',
+  android: '这是一个测试数据 来自android11111',
 });
 
 export default class App extends Component<{}> {
