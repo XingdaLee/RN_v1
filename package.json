@@ -5,12 +5,14 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --port 8899",
     "test": "jest",
-    "dev_win": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
-    "dev": "react-native run-android"
+    "ad": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "ios": "react-native run-ios",
+    "changeAndroidDevPort": "adb reverse tcp:8899 tcp:8899"
   },
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.52.2"
+    "react-native": "0.52.2",
+    "react-native-swiper": "^1.5.13"
   },
   "devDependencies": {
     "babel-jest": "22.1.0",
